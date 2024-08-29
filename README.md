@@ -1,0 +1,2 @@
+# parallo
+trabalho paralelol
