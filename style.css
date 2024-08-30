@@ -1,36 +1,182 @@
-nav ul {
-    display:flex;
-    flex-direction: row;
+body {
+    /* Remove a margem e o padding padrão do corpo da página */
     margin: 0;
-    padding: 0;/* define a distancia entre elementos */
+    padding: 0;
 
-}
-nav ul li{
-    list-style:none;
-    height: 125px;
-    padding: 0 25px 0 0;/*separa a distancia em todos o lados*/
-    
-}
-nav ul li :hover{
-    background-color: #5f202044;
+    /* Define a largura e a altura da página como 100% da tela */
+    width: 100%;
+    height: 100%;
 }
 
+nav {
+    /* Centraliza a navegação horizontalmente */
+    margin: 0 auto;
 
-nav{
-    height:125px;/* altura */
-    max-width:1480px;/* largura maxima */
+    /* Define a posição como absoluta, permitindo posicionamento em relação ao elemento pai */
+    position: absolute;
+
+    /* Define a distância do topo da página */
+    top: 15px;
+
+    /* Define a largura da navegação para ocupar 100% da largura da página */
+    width: 100%;
+
+    /* Define uma largura mínima para a navegação */
     min-width: 1080px;
+}
+
+nav #main-menu-geral {
+    /* Define a largura máxima do menu principal */
+    max-width: 1480px;
+
+    /* Centraliza o menu principal horizontalmente */
+    margin: 0 auto;
+
+    /* Define a altura do menu principal */
+    height: 125px;
+
+    /* Define a cor de fundo do menu principal */
+    background-color: black;
+}
+
+nav ul {
+    /* Define o contêiner de navegação como um flexbox */
+    display: flex;
+
+    /* Define a direção dos itens do flexbox para uma linha horizontal */
+    flex-direction: row;
+
+    /* Remove margens e paddings padrão */
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    /* Remove o estilo padrão de lista (bolinhas) dos itens de lista */
+    list-style: none;
+
+    /* Define a altura de cada item da lista */
+    height: 125px;
+
+    /* Define o padding interno dos itens da lista, com espaçamento vertical e horizontal */
+    padding: 15px 25px;
+}
+
+nav {
+    /* Define a altura da barra de navegação */
+    height: 125px;
+
+    /* Define a largura máxima da barra de navegação */
+    max-width: 100%;
+
+    /* Define a largura mínima da barra de navegação */
+    min-width: 125px;
+
+    /* Define a cor de fundo da barra de navegação */
     background-color: rgb(0, 0, 0);
-
 }
-nav #logo img{
+
+nav ul li {
+    /* Define o padding interno dos itens da lista, apenas no eixo horizontal */
+    padding: 0 25px 0;
+}
+
+nav ul li span {
+    /* Faz o span flutuar à esquerda */
+    float: left;
+
+    /* Define a cor do texto do span */
+    color: #868686;
+
+    /* Define o tamanho da fonte do span */
+    font-size: 11px;
+
+    /* Define a margem ao redor do span */
+    margin: 58px 3px 53px 15px;
+}
+
+nav ul li:hover {
+    /* Muda a cor de fundo do item do menu ao passar o mouse */
+    background: #444;
+}
+
+nav ul li a:hover {
+    /* Adiciona uma linha através do texto e muda a cor ao passar o mouse */
+    text-decoration: line-through;
+    color: yellow;
+}
+
+nav ul li a {
+    /* Define a cor do texto dos links */
+    color: #fff;
+
+    /* Define o tamanho da fonte dos links */
+    font-size: 16px;
+
+    /* Transforma o texto dos links em maiúsculas */
+    text-transform: uppercase;
+
+    /* Remove a sublinha dos links */
+    text-decoration: none;
+
+    /* Define o padding interno dos links */
+    padding: 53px 25px;
+
+    /* Faz o link flutuar à esquerda */
+    float: left;
+
+    /* Adiciona uma transição suave a todas as propriedades dos links */
+    transition: all 1s;
+}
+
+nav #logo img {
+    /* Define a altura da imagem do logo dentro da navegação */
     height: 75px;
+
+    /* Define a margem ao redor da imagem do logo */
     margin: 25px;
-    float: left;/* indica que um elemento vai flutuar*/
 
+    /* Faz a imagem do logo flutuar para a esquerda */
+    float: left;
 }
-nav #main-menu{
-    float: right;
-  
 
+nav #main-menu {
+    /* Faz o contêiner principal do menu de navegação flutuar para a direita */
+    float: right;
+}
+
+.montserrat, nav ul li a {
+    /* Define a fonte Montserrat para os elementos com classe .montserrat e para os links de navegação */
+    font-family: "Montserrat", sans-serif;
+
+    /* Ajusta o tamanho óptico da fonte */
+    font-optical-sizing: auto;
+
+    /* Define o peso da fonte */
+    font-weight: 400;
+
+    /* Define o estilo da fonte como normal */
+    font-style: normal;
+}
+
+#montserrat, nav ul li a {
+    /* Define a fonte Montserrat para os elementos com id #montserrat e para os links de navegação */
+    font-family: "Montserrat", sans-serif;
+
+    /* Ajusta o tamanho óptico da fonte */
+    font-optical-sizing: auto;
+
+    /* Define o peso da fonte */
+    font-weight: 400;
+
+    /* Define o estilo da fonte como normal */
+    font-style: normal;
+}
+
+header img {
+    /* Define a largura da imagem do cabeçalho para ocupar 100% da largura do contêiner */
+    width: 100%;
+
+    /* Define a altura da imagem do cabeçalho para 600% (provavelmente um erro, deve ser ajustado conforme o design) */
+    height: 600%;
 }
