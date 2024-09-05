@@ -9,174 +9,153 @@ body {
 }
 
 nav {
-    /* Centraliza a navegação horizontalmente */
+    /* Centraliza o menu horizontalmente e posiciona-o com relação ao topo da página */
     margin: 0 auto;
-
-    /* Define a posição como absoluta, permitindo posicionamento em relação ao elemento pai */
     position: absolute;
-
-    /* Define a distância do topo da página */
     top: 15px;
-
-    /* Define a largura da navegação para ocupar 100% da largura da página */
     width: 100%;
-
-    /* Define uma largura mínima para a navegação */
-    min-width: 1080px;
+    min-width: 1080px; /* Define a largura mínima para evitar quebra em resoluções pequenas */
 }
 
 nav #main-menu-geral {
-    /* Define a largura máxima do menu principal */
-    max-width: 1480px;
-
-    /* Centraliza o menu principal horizontalmente */
-    margin: 0 auto;
-
-    /* Define a altura do menu principal */
-    height: 125px;
-
-    /* Define a cor de fundo do menu principal */
-    background-color: black;
+   
+    
+    max-width: 1480px; /* Define um tamanho máximo menor */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    height: 125px; /* Altura do menu */
+    background-color: black; /* Cor de fundo preta */
 }
 
+
 nav ul {
-    /* Define o contêiner de navegação como um flexbox */
+    /* Define um layout de flexbox para organizar os itens do menu em uma linha */
     display: flex;
-
-    /* Define a direção dos itens do flexbox para uma linha horizontal */
     flex-direction: row;
-
-    /* Remove margens e paddings padrão */
     margin: 0;
     padding: 0;
 }
 
 nav ul li {
-    /* Remove o estilo padrão de lista (bolinhas) dos itens de lista */
+    /* Remove o estilo de lista e define o espaçamento interno dos itens */
     list-style: none;
-
-    /* Define a altura de cada item da lista */
     height: 125px;
-
-    /* Define o padding interno dos itens da lista, com espaçamento vertical e horizontal */
     padding: 15px 25px;
 }
 
 nav {
-    /* Define a altura da barra de navegação */
+    /* Definindo a altura do menu */
     height: 125px;
-
-    /* Define a largura máxima da barra de navegação */
     max-width: 100%;
-
-    /* Define a largura mínima da barra de navegação */
-    min-width: 125px;
-
-    /* Define a cor de fundo da barra de navegação */
-    background-color: rgb(0, 0, 0);
+    min-width: 125px; /* Define uma largura mínima para o menu */
+    background-color: rgb(10, 4, 4); /* Cor de fundo */
 }
 
 nav ul li {
-    /* Define o padding interno dos itens da lista, apenas no eixo horizontal */
-    padding: 0 25px 0;
+    /* Ajusta o padding dos itens do menu */
+    padding: 15px 25px;
 }
 
 nav ul li span {
-    /* Faz o span flutuar à esquerda */
+    /* Estilo para um span dentro dos itens do menu */
     float: left;
-
-    /* Define a cor do texto do span */
-    color: #868686;
-
-    /* Define o tamanho da fonte do span */
-    font-size: 11px;
-
-    /* Define a margem ao redor do span */
-    margin: 58px 3px 53px 15px;
+    color: #868686; /* Cor do texto */
+    font-size: 11px; /* Tamanho da fonte */
+    margin: 58px 3px 53px 15px; /* Margens ao redor do texto */
 }
 
 nav ul li:hover {
-    /* Muda a cor de fundo do item do menu ao passar o mouse */
+    /* Altera a cor de fundo quando o item do menu é hoverado */
     background: #444;
 }
 
 nav ul li a:hover {
-    /* Adiciona uma linha através do texto e muda a cor ao passar o mouse */
+    /* Efeito de hover no link do menu: sublinhado e mudança de cor */
     text-decoration: line-through;
     color: yellow;
 }
 
 nav ul li a {
-    /* Define a cor do texto dos links */
-    color: #fff;
-
-    /* Define o tamanho da fonte dos links */
-    font-size: 16px;
-
-    /* Transforma o texto dos links em maiúsculas */
-    text-transform: uppercase;
-
-    /* Remove a sublinha dos links */
-    text-decoration: none;
-
-    /* Define o padding interno dos links */
-    padding: 53px 25px;
-
-    /* Faz o link flutuar à esquerda */
-    float: left;
-
-    /* Adiciona uma transição suave a todas as propriedades dos links */
-    transition: all 1s;
+    /* Estilo dos links no menu */
+    color: #fff; /* Cor do texto */
+    font-size: 16px; /* Tamanho da fonte */
+    text-transform: uppercase; /* Texto em maiúsculas */
+    text-decoration: none; /* Remove o sublinhado */
+    padding: 53px 25px; /* Padding dentro dos links */
+    float: left; /* Alinha os links à esquerda */
+    transition: all 1s; /* Transição suave para qualquer mudança */
 }
 
 nav #logo img {
-    /* Define a altura da imagem do logo dentro da navegação */
-    height: 75px;
-
-    /* Define a margem ao redor da imagem do logo */
-    margin: 25px;
-
-    /* Faz a imagem do logo flutuar para a esquerda */
-    float: left;
+    /* Estilo do logotipo dentro do menu */
+    height: 75px; /* Define a altura da imagem do logo */
+    margin: 25px; /* Espaçamento ao redor da imagem */
+    float: left; /* Alinha a imagem à esquerda */
 }
 
 nav #main-menu {
-    /* Faz o contêiner principal do menu de navegação flutuar para a direita */
+    /* Alinha o menu principal à direita */
     float: right;
 }
 
 .montserrat, nav ul li a {
-    /* Define a fonte Montserrat para os elementos com classe .montserrat e para os links de navegação */
+    /* Define a fonte Montserrat para os itens do menu */
     font-family: "Montserrat", sans-serif;
-
-    /* Ajusta o tamanho óptico da fonte */
     font-optical-sizing: auto;
-
-    /* Define o peso da fonte */
     font-weight: 400;
-
-    /* Define o estilo da fonte como normal */
     font-style: normal;
 }
-
-#montserrat, nav ul li a {
-    /* Define a fonte Montserrat para os elementos com id #montserrat e para os links de navegação */
-    font-family: "Montserrat", sans-serif;
-
-    /* Ajusta o tamanho óptico da fonte */
-    font-optical-sizing: auto;
-
-    /* Define o peso da fonte */
-    font-weight: 400;
-
-    /* Define o estilo da fonte como normal */
-    font-style: normal;
+header{
+    height: 600px;
 }
-
 header img {
-    /* Define a largura da imagem do cabeçalho para ocupar 100% da largura do contêiner */
+    /* Define a largura da imagem do cabeçalho para preencher 100% da tela */
     width: 100%;
+    height: 600%; /* Erro: Um valor excessivo para a altura, o correto seria 600px */
+}
 
-    /* Define a altura da imagem do cabeçalho para 600% (provavelmente um erro, deve ser ajustado conforme o design) */
-    height: 600%;
+header .slide {
+    /* Estilo para a imagem de slide no cabeçalho */
+    width: 100%; /* Preenche a largura total */
+    height: 600px; /* Altura fixa */
+    object-fit: cover; /* Garante que a imagem se ajuste ao contêiner sem distorções */
+    position: absolute; /* Posiciona a imagem no fundo */
+    z-index: -1; /* Coloca a imagem atrás de outros elementos */
+}
+
+header #slide-bar {
+    /* Estilo de uma barra de slides no cabeçalho */
+    margin-top: 320px; /* Espaçamento superior */
+    min-width: 280px; /* Largura mínima */
+    float: left; /* Alinha a barra à esquerda */
+    background-image: url(../img/yellow-bg.png); /* Adiciona uma imagem de fundo */
+    width: 625px; /* Define a largura */
+    padding: 0 0 0 60px;
+}
+header #txt_slide{
+    font-family:"Montserrat", sans-serif;
+    font-size: 14px;
+    margin-top: 50px;
+    color: white;
+    text-transform: uppercase;
+}
+header #titulo_slide{
+    font-size: 50px;
+    color: white;
+    font-family:"Montserrat", sans-serif;
+    
+}
+header #titulo_slide h4{
+    margin: 30px 0px ;
+}
+header .seta{
+    float: left;
+}
+header .direita{
+    margin-left: 20px;
+}
+.separador{
+    width: 100%;
+    height: 300px;
+    background-image:url(../img/divider-dark.png);
+    background-repeat:repeat-x ;
 }
